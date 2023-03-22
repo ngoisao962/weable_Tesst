@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section class="home">
+      <div class="container">
+        <div class="h_100">
+            <div class="row home_flex">
+                <div class="col-lg-5">
+                  <p class="home_title">
+                    RUSTICO.co - Tự hào là nhãn hàng thời trang Việt Nam với thiết kế
+                    tối giản và sự tinh tế trong chất liệu. Đối với chúng tôi, vẻ
+                    ngoài hoàn mỹ phải đi cùng với sự thoải mái. Đó là tiêu chí đặt ra
+                    trong từng thiết kế được đưa đến bạn.
+                  </p>
+                 <div class="home_boxstatwar">
+                  <span class="home_starwar"> STAR WAR </span>
+                  <img src="http://rustico.local/wp-content/uploads/2023/03/Vector-152.webp" class="img-fluid home_image" alt="">
+                 </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="item_boxs">
+                    <div class="your-class">
+                        <div class="item_img">
+                            <img
+                                src="http://rustico.local/wp-content/uploads/2023/03/3-man.webp"
+                                class="img-fluid"
+                                alt=""
+                                />
+                        </div>
+                        <div class="item_img">
+                            <img
+                                src="http://rustico.local/wp-content/uploads/2023/03/3-man.webp"
+                                class="img-fluid"
+                                alt=""
+                                />
+                        </div>
+                        <div class="item_img">
+                            <img
+                                src="http://rustico.local/wp-content/uploads/2023/03/3-man.webp"
+                                class="img-fluid"
+                                alt=""
+                                />
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+        $(document).ready(function () {
+  $(".your-class").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    draggable: true,
+    prevArrow: `<button type='button' class='slick-prev slick-arrow'><ion-icon name="arrow-back-outline"></ion-icon></button>`,
+    nextArrow: `<button type='button' class='slick-next slick-arrow'><img src="http://rustico.local/wp-content/uploads/2023/03/Vector-121.webp" alt="" /></button>`,
+    dots: false,
+    responsive: [
+      
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          infinite: false,
+        },
+      },
+    ],
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+});
+    </script>
+  </body>
+</html>
